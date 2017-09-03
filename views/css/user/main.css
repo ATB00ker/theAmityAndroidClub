@@ -1,0 +1,131 @@
+/**************************
+* General Code
+***************************/
+*{
+	cursor:default;
+}
+body{
+	font-size: 16px;
+	cursor:default;
+}
+a:link {
+    color:#039be5;
+	text-decoration: none;
+	cursor:default;
+}
+/* visited link */
+a:visited {
+    color:#039be5;
+	text-decoration: none;
+	cursor:default;
+}
+/* mouse over link */
+a:hover {
+    color:#027CB7;
+	text-decoration: none;
+	cursor:default;
+}
+nav{
+	position: fixed;
+	background-color: rgba(0,0,0,0);
+	z-index: 999;
+}
+.section-header{
+	margin-top: 20px;
+	font-size: 55px;
+	border-bottom: 3px solid;
+	padding: 10px;
+	color: #ef494d;
+}
+/**************************
+* Navigation bar
+***************************/
+#logo-container i{
+	padding-top: 10px;
+}
+#logo-container{
+	height: 57px;
+	line-height: 57px;
+}
+.navLinks{
+	height: 57px;
+	line-height: 57px;
+}
+#background-image{
+	background-image: url('../../images/background-image.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+/**************************
+* Post Area
+***************************/
+#postsArea{
+	position: relative;
+	top: 70px;
+}
+.card-title{
+	font-size: 55px;
+	border-bottom: 3px solid;
+	padding: 5px;
+	color: #ef494d;
+}
+.card-action{
+	padding: 11px!important;
+}
+.card-action a{
+	color: #039be5!important;
+}
+.card .card-content p{
+	margin: 10px;
+}
+/**************************
+* Admin Section
+***************************/
+#makePosts{
+	position: relative;
+	top: 70px;
+	margin-bottom: 70px;
+}
+#makePosts form{
+	padding: 40px;
+	padding-top: 20px;
+}
+#makePostsTitle{
+	font-size: 45px;
+	border-bottom: 3px solid;
+	margin: 20px;
+	padding: 3px;
+	padding-left: 15px;
+	padding-top: 15px;
+	margin-bottom: 0;
+	color: #ef494d;
+}
+/**************************
+* Login
+***************************/
+#loginBox .card{
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 3px;
+	width: 350px;
+	height: 300px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+@media all and (max-width: 400px){
+	#loginBox .card{
+		width: 300px;
+	}
+}
+#errorMsg{
+	font-size: 20px;
+	border: 1px solid red;
+	color: red;
+	margin: 4px;
+	margin-bottom: 20px;
+	padding: 5px;
+}

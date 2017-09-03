@@ -1,0 +1,39 @@
+{
+  "name": "amity-android-club",
+  "version": "0.2.0",
+  "description": "The Amity Android Club Official Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error 101: Unknown Fail Point\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ATB00ker/theAmityAndroidClub.git"
+  },
+  "keywords": [
+    "The",
+    "Amity",
+    "Android",
+    "Club",
+    "The",
+    "Amity",
+    "Android",
+    "Club",
+    "Website",
+    "Amity",
+    "Learn",
+    "Android",
+    "Learn",
+    "Application",
+    "Development",
+    "ASET",
+    "Amity",
+    "University"
+  ],
+  "author": "Ajay Tripathi (https://github.com/ATB00ker)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ATB00ker/theAmityAndroidClub/issues"
+  },
+  "homepage": "https://github.com/ATB00ker/theAmityAndroidClub#readme"
+}

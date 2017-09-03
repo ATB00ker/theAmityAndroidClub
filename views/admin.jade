@@ -1,0 +1,70 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		// Search engine optimisatin
+		meta(name='description', content='The Amity Android Club')
+		meta(name='keywords', content='The Amity Android Club ,The Amity Android Club Website, Amity, Learn Android, Learn Application Development, ASET, Amity University')
+		meta(name='author', content='The Amity Android Club')
+		// End Search Engine Optimisation
+		// Browser tab theme color for Chrome on Android
+		meta(name='theme-color', content='#A4C639')
+		title Android
+		// Site favicon
+		link(href='./images/navLogo.png', rel='apple-touch-icon')
+		link(href='./images/navLogo.png', rel='shortcut icon')
+		// Font Awesome Styles
+		script(src='https://use.fontawesome.com/8fda296a12.js')
+		// Materialize CSS
+		link(href='./css/materialize.min.css', type='text/css', rel='stylesheet')
+		// Custom CSS
+		link(href='./css/user/main.css', type='text/css', rel='stylesheet')
+	body#background-image
+		// Header Section
+		nav(role='navigation')
+			.nav-wrapper.container
+				a#logo-container.brand-logo(href='#')
+					i.fa.fa-android(aria-hidden='true')
+					| Android Club
+				ul.right.hide-on-med-and-down
+					li
+						a.navLinks(href='/logout') Logout
+				ul#nav-mobile.side-nav
+					li
+						a(href='/logout') Logout
+				a.button-collapse(href='#', data-activates='nav-mobile')
+					i.fa.fa-bars(aria-hidden='true')
+		// Header Section
+		section
+			.container
+				.row
+					.col.s12
+						#makePosts.card.hoverable
+							#makePostsTitle Make Post
+							form(method='post')
+								.input-field
+									input.validate(name='title', type='text')
+									label.active(for='title') Post Title
+								.input-field
+									input.validate(name='content', type='text')
+									label.active(for='content') Post Content
+								.input-field
+									input.validate(name='cta', type='text')
+									label.active(for='cta') Link
+								.input-field
+									input.validate(name='ctaName', value="Download", type='text')
+									label.active(for='ctaName') Link Name
+								button.btn.waves-effect.waves-light(type='submit', value='Submit') Post
+				.row
+					.col.s12
+						#adminPosts
+		// jQuery
+		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+		// Materialize JavaScript
+		script(src='./js/materialize.min.js')
+		// Functionality Scripts
+		script(src='./js/user/functions.js')
+		// Call for Posts
+		script(src='./js/user/postsCall.js')
