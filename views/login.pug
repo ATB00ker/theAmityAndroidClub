@@ -42,8 +42,6 @@ html(lang='en')
 				.row
 					.col.s12.m6
 						.card.hoverable
-							each message in flash
-								#errorMsg #{message}
 							form(method='post')
 								.input-field
 									input.validate(name='user[name]', value='Administrator', type='text')

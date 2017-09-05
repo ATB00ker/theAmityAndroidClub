@@ -27,13 +27,14 @@ https://dev.mysql.com/doc/workbench/en/wb-installing-windows.html
 $ npm install <middleware-name>
 ```
 - body-parser@1.17.2
-- connect-flash@0.1.1
 - cookie-parser@1.4.3
 - express@4.15.4
 - express-session@1.15.5
 - mysql@2.14.1
 - node-datetime@2.0.0
 - pug@2.0.0-rc.3
+- random-key@0.3.2
+- simple-encryptor@1.1.0
 
 ### Set Database (Inside "theAmityAndroidClub/lib/")
 ```
