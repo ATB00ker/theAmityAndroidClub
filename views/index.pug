@@ -38,7 +38,16 @@ html(lang='en')
 		// Header Section
 		section#postsArea
 			.container
-				#adminPosts
+				for values in adminPostsContainer
+					.row
+						.col.l1
+						.col.s12.l10
+							.card
+								.card-content
+									span.text-center.card-title #{values.postTitle}
+									p #{values.postContent}
+										.card-action
+											a(href=values.postLink) #{values.postLinkName}
 		footer
 		// jQuery
 		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
@@ -46,5 +55,3 @@ html(lang='en')
 		script(src='./js/materialize.min.js')
 		// Functionality Scripts
 		script(src='./js/user/functions.js')
-		// Call for Posts
-		script(src='./js/user/postsCall.js')

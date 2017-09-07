@@ -71,9 +71,13 @@ nav{
 }
 .card-action{
 	padding: 11px!important;
+	padding-bottom: 5px!important;
 }
 .card-action a{
 	color: #039be5!important;
+}
+.card .card-content{
+	padding-bottom: 1px!important;
 }
 .card .card-content p{
 	margin: 10px;

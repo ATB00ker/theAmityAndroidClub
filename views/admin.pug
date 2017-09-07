@@ -59,12 +59,19 @@ html(lang='en')
 								button.btn.waves-effect.waves-light(type='submit', value='Submit') Post
 				.row
 					.col.s12
-						#adminPosts
+						for values in adminPostsContainer
+							.row
+								.col.l1
+								.col.s12.l10
+									.card
+										.card-content
+											span.text-center.card-title #{values.postTitle}
+											p #{values.postContent}
+												.card-action
+													a(href=values.postLink) #{values.postLinkName}
 		// jQuery
 		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
 		// Materialize JavaScript
 		script(src='./js/materialize.min.js')
 		// Functionality Scripts
 		script(src='./js/user/functions.js')
-		// Call for Posts
-		script(src='./js/user/postsCall.js')
