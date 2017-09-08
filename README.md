@@ -34,7 +34,9 @@ $ npm install <middleware-name>
 - node-datetime@2.0.0
 - pug@2.0.0-rc.3
 - random-key@0.3.2
-- simple-encryptor@1.1.0
+- express-flash@0.0.2
+- sleep@5.1.1 extraneous
+
 
 ### Set Database (Inside "theAmityAndroidClub/lib/")
 ```

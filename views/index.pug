@@ -36,7 +36,7 @@ html(lang='en')
 				a.button-collapse(href='#', data-activates='nav-mobile')
 					i.fa.fa-bars(aria-hidden='true')
 		// Header Section
-		section#postsArea
+		#postsArea
 			.container
 				for values in adminPostsContainer
 					.row
@@ -44,10 +44,13 @@ html(lang='en')
 						.col.s12.l10
 							.card
 								.card-content
-									span.text-center.card-title #{values.postTitle}
+									.row.titleLine
+										.col.s10.text-center.card-title #{values.postTitle}
+										.col.s2.right-align
 									p #{values.postContent}
-										.card-action
-											a(href=values.postLink) #{values.postLinkName}
+									p.right-align.adminName @#{values.adminUsername}
+									.card-action
+										a(href=values.postLink) #{values.postLinkName}
 		footer
 		// jQuery
 		script(src='https://code.jquery.com/jquery-3.2.1.min.js')

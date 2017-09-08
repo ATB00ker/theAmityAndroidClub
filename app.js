@@ -3,6 +3,7 @@ var express = require('express'),
 	cookieParser = require('cookie-parser'),
 	http = require('http'),
 	bodyParser = require('body-parser'),
+	flash = require('express-flash'),
 	session = require('express-session');
 
 var app = express();
@@ -19,6 +20,7 @@ app.set('view engine', 'pug');
 app.set('view options', { layout: false });
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+app.use(flash());
 
 //Defining the public folder path.
 app.use(express.static(path.join(__dirname, '/views')));

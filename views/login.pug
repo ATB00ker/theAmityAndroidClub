@@ -42,6 +42,9 @@ html(lang='en')
 				.row
 					.col.s12.m6
 						.card.hoverable
+							- if (messages.Error)
+								.message.Error
+									#errorMsg #{messages.Error}
 							form(method='post')
 								.input-field
 									input.validate(name='user[name]', value='Administrator', type='text')

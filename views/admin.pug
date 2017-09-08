@@ -58,20 +58,31 @@ html(lang='en')
 									label.active(for='ctaName') Link Name
 								button.btn.waves-effect.waves-light(type='submit', value='Submit') Post
 				.row
-					.col.s12
+					.col.s12#adminPostsJavaSript
 						for values in adminPostsContainer
-							.row
-								.col.l1
-								.col.s12.l10
-									.card
-										.card-content
-											span.text-center.card-title #{values.postTitle}
-											p #{values.postContent}
+							-var deletePostsContainer = "deletePosts("+"'"+values.id+"'"+")";
+							-var editPostsContainer = "editPosts("+"'"+values.id+"'"+")";
+								.row
+									.col.l1
+									.col.s12.l10
+										.card
+											.card-content
+												.row.titleLine
+													.col.s10.text-center.card-title #{values.postTitle}
+													.col.s2.right-align
+														a.dropdown-button.btn(href='#', data-activates=values.id)
+															i.fa.fa-cogs(aria-hidden='true')
+														ul(id=values.id).dropdown-content
+															li.materializedBtn(onclick=editPostsContainer) Edit
+															li.divider
+															li.materializedBtn(onclick=deletePostsContainer) Delete
+												p #{values.postContent}
+												p.right-align.adminName @#{values.adminUsername}
 												.card-action
 													a(href=values.postLink) #{values.postLinkName}
-		// jQuery
-		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
-		// Materialize JavaScript
-		script(src='./js/materialize.min.js')
-		// Functionality Scripts
-		script(src='./js/user/functions.js')
+// jQuery
+script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+// Materialize JavaScript
+script(src='./js/materialize.min.js')
+// Functionality Scripts
+script(src='./js/user/functions.js')
