@@ -47,10 +47,10 @@ html(lang='en')
 									#errorMsg #{messages.Error}
 							form(method='post')
 								.input-field
-									input.validate(name='user[name]', value='Administrator', type='text')
+									input.validate(name='user[name]', type='text')
 									label.active(for='userName') Username
 								.input-field
-									input.validate(name='user[pass]', value='GenericPassword', type='password')
+									input.validate(name='user[pass]', type='password')
 									label.active(for='password') Password
 								button.btn.waves-effect.waves-light(type='submit', value='Submit') Login
 		// jQuery
