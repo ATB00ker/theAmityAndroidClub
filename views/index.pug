@@ -29,8 +29,12 @@ html(lang='en')
 					| Android Club
 				ul.right.hide-on-med-and-down
 					li
+						a.navLinks(href="/Register") Register
+					li
 						a.navLinks(href="/login") Login
 				ul#nav-mobile.side-nav
+					li
+						a(href="/Register") Register
 					li
 						a(href="/login") Login
 				a.button-collapse(href='#', data-activates='nav-mobile')
@@ -57,4 +61,4 @@ html(lang='en')
 		// Materialize JavaScript
 		script(src='./js/materialize.min.js')
 		// Functionality Scripts
-		script(src='./js/user/functions.js')
+		script(src='./js/user/init.js')
