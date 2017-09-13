@@ -29,9 +29,15 @@ html(lang='en')
 					i.fa.fa-android(aria-hidden='true')
 					| Android Club
 				ul.right.hide-on-med-and-down
+					if authenticationStatus > 1
+						li
+							a.navLinks(href='/manage') Manage
 					li
 						a.navLinks(href='/logout') Logout
 				ul#nav-mobile.side-nav
+					if authenticationStatus > 1
+						li
+							a(href='/manage') Manage
 					li
 						a(href='/logout') Logout
 				a.button-collapse(href='#', data-activates='nav-mobile')
@@ -41,8 +47,8 @@ html(lang='en')
 			.container
 				.row
 					.col.s12
-						#makePosts.card.hoverable
-							#makePostsTitle Make Post
+						#adminForms.card.hoverable
+							#adminFormsTitle Make Post
 							form(method='post')
 								.input-field
 									input.validate(name='title', type='text')
@@ -86,3 +92,4 @@ script(src='https://code.jquery.com/jquery-3.2.1.min.js')
 script(src='./js/materialize.min.js')
 // Functionality Scripts
 script(src='./js/user/functions.js')
+script(src='./js/user/init.js')

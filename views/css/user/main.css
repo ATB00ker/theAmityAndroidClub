@@ -21,7 +21,7 @@ a:visited {
 }
 /* mouse over link */
 a:hover {
-    color:#027CB7;
+    color:#fff!important;
 	text-decoration: none;
 	cursor:default;
 }
@@ -36,6 +36,9 @@ nav{
 	border-bottom: 3px solid;
 	padding: 10px;
 	color: #ef494d;
+}
+.icon_disable{
+	opacity: 0.5;
 }
 /**************************
 * Navigation bar
@@ -55,6 +58,9 @@ nav{
 	background-image: url('../../images/background-image.jpg');
 	background-attachment: fixed;
 	background-size: cover;
+}
+nav a:hover {
+	color:#027CB7!important;
 }
 /**************************
 * Post Area
@@ -84,16 +90,16 @@ nav{
 /**************************
 * Admin Section
 ***************************/
-#makePosts{
+#adminForms{
 	position: relative;
 	top: 70px;
 	margin-bottom: 70px;
 }
-#makePosts form{
+#adminForms form{
 	padding: 40px;
 	padding-top: 20px;
 }
-#makePostsTitle{
+#adminFormsTitle{
 	font-size: 45px;
 	border-bottom: 3px solid;
 	margin: 20px;
@@ -156,4 +162,15 @@ nav{
 	margin-top: 4px;
 	margin-bottom: 20px;
 	padding: 5px;
+}
+/**************************
+* Manage Section
+***************************/
+#adminDetailsTable{
+	background-color: #fff;
+	position: relative;
+	top: 70px;
+	margin: auto;
+	margin-bottom: 70px;
+	padding: 30px;
 }

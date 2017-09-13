@@ -1,10 +1,5 @@
 /**************************
-* Materialize Initiate
-***************************/
-$(".button-collapse").sideNav();
-$('.dropdown-button').dropdown('open');
-/**************************
-* Deleted Posts
+* Altering Posts
 ***************************/
 function deletePosts(data) {
     $.post("/deletePosts", {id: data}, function(response, status){
@@ -28,8 +23,4 @@ function editPosts(data){
         Materialize.toast('Post deleted! Edit & Send new Post!', 4000);
         deletePosts(data);
     });
-}
-function enableSettingsMenu(id){
-    $(id).dropdown();
-    $(id).dropdown('open');
 }

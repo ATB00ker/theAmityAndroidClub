@@ -35,7 +35,6 @@ $ npm install <middleware-name>
 - pug@2.0.0-rc.3
 - random-key@0.3.2
 - express-flash@0.0.2
-- sleep@5.1.1 extraneous
 
 
 ### Set Database (Inside "theAmityAndroidClub/lib/")
